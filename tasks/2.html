@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+
+<body style="background-color: rgb(110, 128, 157)">
+    <style>
+        .menu li {
+            height: 20px;
+            width: 150px;
+            text-align: center;
+            background-color: yellowgreen;
+            border: 1px solid black;
+            list-style-type: none;
+            margin: 2px;
+            display: none;
+           
+        }
+
+        .menu.open li {
+            display: block;
+        }
+
+        .menu .title {
+            cursor: pointer;
+            font-size: 50px;
+            background-color: brown;
+            border: 2px solid #000000;
+
+        }
+
+        .menu .title::before {
+            content: '🙈 ';
+            font-size: 80%;
+        }
+
+        .menu.open .title::before {
+            content: '🐵 ';
+            font-size: 80%;
+        }
+    </style>
+    <div id='menu' class="menu">
+        <span class="title">Honey?</span>
+        <li>Apple-pie</li>
+        <li>Coca-colla</li>
+        <li>Orange-pie</li>
+        <li>Coconut-cake 😬</li>
+        <li>Honey!😊</li>
+    </div>
+
+
+    <script>
+        let menu = document.getElementById('menu')
+        let title = menu.querySelector('.title')
+
+        title.onclick = function () {
+            menu.classList.toggle('open')
+        };
+    </script>
+</body>
+
+</html>

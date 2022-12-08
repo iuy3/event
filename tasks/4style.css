@@ -1,0 +1,37 @@
+.remove-button {
+    font-size: 100%;
+    width: 29px;
+    height: 29px;
+    border: dashed rgb(13, 13, 13);
+    background: border-box rgba(0, 255, 238, 0.295);
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+
+  .pane{
+    background: oldlace;
+    padding: 20px 30px 20px;
+    border-top: solid 8px rgb(54, 48, 48);
+    position: relative;
+  }
+
+
+  p{
+    margin: 0px;
+    padding: 0 0 .1em;
+  }
+
+  h3{
+    color: rgb(21, 206, 138);
+    font-style: italic;
+    font-size: 1.1em;
+  }
+
+  body{
+    margin: 10px auto;
+    width: 690px;
+
+  }

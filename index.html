@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intro in the event</title>
+</head>
+<body>
+    
+<input id = "element" value="click me" type ="button" onclick="alert('привет')">
+
+
+<button onclick="alert(this.innerHTML)">abcd</button>
+
+<button id = 'push' >push me</button>
+
+
+<button id = 'button4'>button4</button>
+
+<button id ='button5'>button5</button>
+
+<button id = 'button777'>777</button>
+<script>
+    function myFunction(){
+        alert('hello')
+    }
+    //element.onclick = myFunction
+    //element.onclick = null
+
+    push.addEventListener('click', ()=> alert('push'))
+  //  push.removeEventListener('click', )
+
+
+  
+  button4.onclick = function(event){
+        alert(event.type + " " + event.currentTarget)
+        alert(event.clientX + " "+ event.clientY)
+  }
+
+
+  button5.addEventListener("click", {
+        handleEvent(event){
+            alert(event.clientX + ' '+ event.clientY)
+        }
+  })
+
+</script>
+
+
+<script src="index.js"></script>
+
+</body>
+</html>
